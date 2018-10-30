@@ -1,0 +1,166 @@
+= XP Game
+==============================
+:author:    Vera Peeters & Pascal Van Cauwenberghe
+:backend:   revealjs
+:max-width: 45em
+:data-uri:
+:customcss:
+:icons: font
+:transition: fade
+:revealjs_history: true
+
+
+== Le but
+Nous allons simuler le Planning Game
+
+* en estimant les user stories
+* en planifiant les itérations
+* en implémentant les fonctionnalités
+* en récupérant du feedback
+
+== Le but
+Nous allons mesurer et utiliser la *vélocité*.
+
+Tout le monde jouera le rôle de client et développeur.
+
+Pas d'inquiétude, l'implémentation n'est pas trop difficile ^^
+
+== Itération
+
+* le client écrit les US
+* les développeurs estiment les US
+* le client planifie l'itération
+* les développeurs implémentent les US
+* le client réalise les tests d'acceptance
+* debrief et rétrospective
+
+== Itération
+
+Nous jouerons 3 Itérations
+
+== Le jeu
+
+* 4 à 5 joueurs par équipe
+* But : Accumuler de la valeur métier en implémentant des US
+
+== Les moyens
+
+* User stories sur des cartes
+* Chaque US permet de gagner de la valeur métier
+** *mais uniquement si elle est implémentée complètement*
+* Le temps est limité !
+
+== Estimations
+
+Aller à la table de jeu
+
+== Estimations
+
+* Trier les US : combien de temps nécessaire ?
+* Assigner aux US les points d'effort estimés
+  ** la + simple : 1 point
+  ** la + complexe : 6 points... ou impossible
+  ** Estimations relatives
+* Poser des questions
+* N'y passer pas trop de temps !
+
+== Planification de l'itération
+
+Aller à la table de planification
+
+== Planification de l'itération
+
+* Combien de US par itération (180 s) ?
+* Choisissez les US pour le planning
+* Priorisez les US ...
+* ... pour maximiser la valeur métier potentielle
+
+== Implémentation
+
+Aller à la table de jeu
+
+== Implémentation
+
+* Désignez un gardien du temps pour cette itération
+* Prenez la 1ere US du plan de l'itération
+** le gardien du temps démarre le chrono
+** l'équipe implémente la US
+** le gardien du temps arrête le chrono
+** le coach vérifie l'Implémentation
+
+== Implémentation
+
+* Jusqu'à ce que vous atteignez la limite de temps (180 s)
+* Faites une revue de votre progression à mi-itération
+* Si une US se déroule mal, vous pouvez l'abandonner...
+* ... si votre client est d'accord
+
+== Action !
+
+* Maintenant c'est à vous de jouer !
+* Vous avez 40 minutes pour
+** estimer
+** planifier
+** implémenter
+* Alors allez-y !
+
+link:ReleaseTimer.html[Timer] / link:GameScore.html[Score]
+
+== Qu'avons-nous appris ?
+
+* Estimations vs réalité
+** Longueur d'itération fixe
+** Estimations de Y points
+** En réalité, nous avons implémenté N points
+VELOCITE = POINTS D'EFFORT PAR ITERATION
+
+* Pour votre prochaine itération
+** Utilisez la vélocité pour choisir les US
+
+== Deuxième itération
+
+* Planning game et implémentation en utilisant la vélocité
+* Comparez avec les implémentations réalisées
+* Vous pouvez ré-estimer les US
+
+== Deuxième itération
+Attention :
+
+  * US réalisée non planifiée : 1/2 valeur comptabilisée
+  * US planifiée non terminée : pénalité de 1/2 valeur
+
+link:ReleaseTimer2.html[Timer]
+
+== Troisième itération
+
+* Estimation
+* Planification
+* Implémentation
+
+link:ReleaseTimer2.html[Timer]
+
+== Résumons
+
+* Rôle et responsabilités
+** client
+** développeurs
+
+== Résumons
+
+* Estimer
+** Précision
+** Consistance
+
+== Résumons
+
+* Itérations
+** mesurer la vélocité => amélioration des estimations
+** livrer de la valeur métier
+
+== Et le gagnant est ...
+
+L'équipe avec la plus grande valeur métier cumulée
+
+== Pour en savoir plus
+
+http://www.xp.be

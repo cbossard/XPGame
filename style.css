@@ -1,0 +1,50 @@
+body
+{
+	margin: 0px;
+	color: midnightblue;
+	font-family: arial;
+	font-size: 15pt;
+	background-color: black;
+	text-align: justify;
+}
+
+div.main
+{
+	font-size: 120%;
+	color: white;
+	font-family: Garamond;
+	display : block ;
+	height : 20em ;
+	margin-right : 1em ;
+	margin-left : 1em ;
+}
+
+div.mainFull
+{
+	color: white;
+	font-family: Garamond;
+	display : block ;
+	margin-right : 1em ;
+	margin-left : 1em ;
+}
+
+h1.center
+{
+	margin-top: 0em;
+	margin-bottom: 1em;
+	font-weight: bold;
+	position: static;
+	text-align: center;
+	color: white;
+}
+
+
+table.timer tr td.filled
+{
+	background-color: #17a2b8;
+}
+
+table.timer tr td.done
+{
+	background-color: #bd2130;
+}

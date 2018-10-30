@@ -1,0 +1,126 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="author" content="Vera Peeters &amp; Pascal Van Cauwenberghe"><title>XP Game</title><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport"><link href="node_modules/reveal.js/css/reveal.css" rel="stylesheet"><link rel="stylesheet" href="node_modules/reveal.js/css/theme/black.css" id="theme"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"><link href="node_modules/reveal.js/lib/css/zenburn.css" rel="stylesheet"><script>var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? "node_modules/reveal.js/css/print/pdf.css" : "node_modules/reveal.js/css/print/paper.css";
+document.getElementsByTagName( 'head' )[0].appendChild( link );</script><!--[if lt IE 9]><script src="node_modules/reveal.js/lib/js/html5shiv.js"></script><![endif]--><link rel="stylesheet" href="asciidoctor-revealjs.css"></head><body><div class="reveal"><div class="slides"><section class="title" data-state="title"><h1>XP Game</h1><p class="author"><small>Vera Peeters &amp; Pascal Van Cauwenberghe</small></p></section><section id="le_but" data-transition="fade"><h2>Le but</h2><div class="paragraph"><p>Nous allons simuler le Planning Game</p></div>
+<div class="ulist"><ul><li><p>en estimant les user stories</p></li><li><p>en planifiant les itérations</p></li><li><p>en implémentant les fonctionnalités</p></li><li><p>en récupérant du feedback</p></li></ul></div></section>
+<section id="le_but_2" data-transition="fade"><h2>Le but</h2><div class="paragraph"><p>Nous allons mesurer et utiliser la <strong>vélocité</strong>.</p></div>
+<div class="paragraph"><p>Tout le monde jouera le rôle de client et développeur.</p></div>
+<div class="paragraph"><p>Pas d&#8217;inquiétude, l&#8217;implémentation n&#8217;est pas trop difficile ^^</p></div></section>
+<section id="itration" data-transition="fade"><h2>Itération</h2><div class="ulist"><ul><li><p>le client écrit les US</p></li><li><p>les développeurs estiment les US</p></li><li><p>le client planifie l&#8217;itération</p></li><li><p>les développeurs implémentent les US</p></li><li><p>le client réalise les tests d&#8217;acceptance</p></li><li><p>debrief et rétrospective</p></li></ul></div></section>
+<section id="itration_2" data-transition="fade"><h2>Itération</h2><div class="paragraph"><p>Nous jouerons 3 Itérations</p></div></section>
+<section id="le_jeu" data-transition="fade"><h2>Le jeu</h2><div class="ulist"><ul><li><p>4 à 5 joueurs par équipe</p></li><li><p>But : Accumuler de la valeur métier en implémentant des US</p></li></ul></div></section>
+<section id="les_moyens" data-transition="fade"><h2>Les moyens</h2><div class="ulist"><ul><li><p>User stories sur des cartes</p></li><li><p>Chaque US permet de gagner de la valeur métier</p><div class="ulist"><ul><li><p><strong>mais uniquement si elle est implémentée complètement</strong></p></li></ul></div></li><li><p>Le temps est limité !</p></li></ul></div></section>
+<section id="estimations" data-transition="fade"><h2>Estimations</h2><div class="paragraph"><p>Aller à la table de jeu</p></div></section>
+<section id="estimations_2" data-transition="fade"><h2>Estimations</h2><div class="ulist"><ul><li><p>Trier les US : combien de temps nécessaire ?</p></li><li><p>Assigner aux US les points d&#8217;effort estimés</p><div class="ulist"><ul><li><p>la + simple : 1 point</p></li><li><p>la + complexe : 6 points&#8230;&#8203; ou impossible</p></li><li><p>Estimations relatives</p></li></ul></div></li><li><p>Poser des questions</p></li><li><p>N&#8217;y passer pas trop de temps !</p></li></ul></div></section>
+<section id="planification_de_l_itration" data-transition="fade"><h2>Planification de l&#8217;itération</h2><div class="paragraph"><p>Aller à la table de planification</p></div></section>
+<section id="planification_de_l_itration_2" data-transition="fade"><h2>Planification de l&#8217;itération</h2><div class="ulist"><ul><li><p>Combien de US par itération (180 s) ?</p></li><li><p>Choisissez les US pour le planning</p></li><li><p>Priorisez les US &#8230;&#8203;</p></li><li><p>&#8230;&#8203; pour maximiser la valeur métier potentielle</p></li></ul></div></section>
+<section id="implmentation" data-transition="fade"><h2>Implémentation</h2><div class="paragraph"><p>Aller à la table de jeu</p></div></section>
+<section id="implmentation_2" data-transition="fade"><h2>Implémentation</h2><div class="ulist"><ul><li><p>Désignez un gardien du temps pour cette itération</p></li><li><p>Prenez la 1ere US du plan de l&#8217;itération</p><div class="ulist"><ul><li><p>le gardien du temps démarre le chrono</p></li><li><p>l&#8217;équipe implémente la US</p></li><li><p>le gardien du temps arrête le chrono</p></li><li><p>le coach vérifie l&#8217;Implémentation</p></li></ul></div></li></ul></div></section>
+<section id="implmentation_3" data-transition="fade"><h2>Implémentation</h2><div class="ulist"><ul><li><p>Jusqu&#8217;à ce que vous atteignez la limite de temps (180 s)</p></li><li><p>Faites une revue de votre progression à mi-itération</p></li><li><p>Si une US se déroule mal, vous pouvez l&#8217;abandonner&#8230;&#8203;</p></li><li><p>&#8230;&#8203; si votre client est d&#8217;accord</p></li></ul></div></section>
+<section id="action" data-transition="fade"><h2>Action !</h2><div class="ulist"><ul><li><p>Maintenant c&#8217;est à vous de jouer !</p></li><li><p>Vous avez 40 minutes pour</p><div class="ulist"><ul><li><p>estimer</p></li><li><p>planifier</p></li><li><p>implémenter</p></li></ul></div></li><li><p>Alors allez-y !</p></li></ul></div>
+<div class="paragraph"><p><a href="ReleaseTimer.html">Timer</a> / <a href="GameScore.html">Score</a></p></div></section>
+<section id="qu_avons_nous_appris" data-transition="fade"><h2>Qu&#8217;avons-nous appris ?</h2><div class="ulist"><ul><li><p>Estimations vs réalité</p><div class="ulist"><ul><li><p>Longueur d&#8217;itération fixe</p></li><li><p>Estimations de Y points</p></li><li><p>En réalité, nous avons implémenté N points
+VELOCITE = POINTS D&#8217;EFFORT PAR ITERATION</p></li></ul></div></li><li><p>Pour votre prochaine itération</p><div class="ulist"><ul><li><p>Utilisez la vélocité pour choisir les US</p></li></ul></div></li></ul></div></section>
+<section id="deuxime_itration" data-transition="fade"><h2>Deuxième itération</h2><div class="ulist"><ul><li><p>Planning game et implémentation en utilisant la vélocité</p></li><li><p>Comparez avec les implémentations réalisées</p></li><li><p>Vous pouvez ré-estimer les US</p></li></ul></div></section>
+<section id="deuxime_itration_2" data-transition="fade"><h2>Deuxième itération</h2><div class="paragraph"><p>Attention :</p></div>
+<div class="ulist"><ul><li><p>US réalisée non planifiée : 1/2 valeur comptabilisée</p></li><li><p>US planifiée non terminée : pénalité de 1/2 valeur</p></li></ul></div>
+<div class="paragraph"><p><a href="ReleaseTimer2.html">Timer</a></p></div></section>
+<section id="troisime_itration" data-transition="fade"><h2>Troisième itération</h2><div class="ulist"><ul><li><p>Estimation</p></li><li><p>Planification</p></li><li><p>Implémentation</p></li></ul></div>
+<div class="paragraph"><p><a href="ReleaseTimer2.html">Timer</a></p></div></section>
+<section id="rsumons" data-transition="fade"><h2>Résumons</h2><div class="ulist"><ul><li><p>Rôle et responsabilités</p><div class="ulist"><ul><li><p>client</p></li><li><p>développeurs</p></li></ul></div></li></ul></div></section>
+<section id="rsumons_2" data-transition="fade"><h2>Résumons</h2><div class="ulist"><ul><li><p>Estimer</p><div class="ulist"><ul><li><p>Précision</p></li><li><p>Consistance</p></li></ul></div></li></ul></div></section>
+<section id="rsumons_3" data-transition="fade"><h2>Résumons</h2><div class="ulist"><ul><li><p>Itérations</p><div class="ulist"><ul><li><p>mesurer la vélocité &#8658; amélioration des estimations</p></li><li><p>livrer de la valeur métier</p></li></ul></div></li></ul></div></section>
+<section id="et_le_gagnant_est" data-transition="fade"><h2>Et le gagnant est &#8230;&#8203;</h2><div class="paragraph"><p>L&#8217;équipe avec la plus grande valeur métier cumulée</p></div></section>
+<section id="pour_en_savoir_plus" data-transition="fade"><h2>Pour en savoir plus</h2><div class="paragraph"><p><a href="http://www.xp.be" class="bare">http://www.xp.be</a></p></div></section></div></div><script src="node_modules/reveal.js/lib/js/head.min.js"></script><script src="node_modules/reveal.js/js/reveal.js"></script><script>// See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
+Reveal.initialize({
+  // Display controls in the bottom right corner
+  controls: true,
+  // Display a presentation progress bar
+  progress: true,
+  // Set a per-slide timing for speaker notes, null means none
+  defaultTiming: null,
+  // Display the page number of the current slide
+  slideNumber: false,
+  // Push each slide change to the browser history
+  history: true,
+  // Enable keyboard shortcuts for navigation
+  keyboard: true,
+  // Enable the slide overview mode
+  overview: true,
+  // Vertical centering of slides
+  center: true,
+  // Enables touch navigation on devices with touch input
+  touch: true,
+  // Loop the presentation
+  loop: false,
+  // Change the presentation direction to be RTL
+  rtl: false,
+  // Randomizes the order of slides each time the presentation loads
+  shuffle: false,
+  // Turns fragments on and off globally
+  fragments: true,
+  // Flags if the presentation is running in an embedded mode,
+  // i.e. contained within a limited portion of the screen
+  embedded: false,
+  // Flags if we should show a help overlay when the questionmark
+  // key is pressed
+  help: true,
+  // Flags if speaker notes should be visible to all viewers
+  showNotes: false,
+  // Global override for autolaying embedded media (video/audio/iframe)
+  // - null: Media will only autoplay if data-autoplay is present
+  // - true: All media will autoplay, regardless of individual setting
+  // - false: No media will autoplay, regardless of individual setting
+  autoPlayMedia: null,
+  // Number of milliseconds between automatically proceeding to the
+  // next slide, disabled when set to 0, this value can be overwritten
+  // by using a data-autoslide attribute on your slides
+  autoSlide: 0,
+  // Stop auto-sliding after user input
+  autoSlideStoppable: true,
+  // Enable slide navigation via mouse wheel
+  mouseWheel: false,
+  // Hides the address bar on mobile devices
+  hideAddressBar: true,
+  // Opens links in an iframe preview overlay
+  previewLinks: false,
+  // Theme (e.g., beige, black, league, night, serif, simple, sky, solarized, white)
+  // NOTE setting the theme in the config no longer works in reveal.js 3.x
+  //theme: Reveal.getQueryHash().theme || 'black',
+  // Transition style (e.g., none, fade, slide, convex, concave, zoom)
+  transition: Reveal.getQueryHash().transition || 'slide',
+  // Transition speed (e.g., default, fast, slow)
+  transitionSpeed: 'default',
+  // Transition style for full page slide backgrounds (e.g., none, fade, slide, convex, concave, zoom)
+  backgroundTransition: 'fade',
+  // Number of slides away from the current that are visible
+  viewDistance: 3,
+  // Parallax background image (e.g., "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'")
+  parallaxBackgroundImage: '',
+  // Parallax background size in CSS syntax (e.g., "2100px 900px")
+  parallaxBackgroundSize: '',
+
+  // The "normal" size of the presentation, aspect ratio will be preserved
+  // when the presentation is scaled to fit different resolutions. Can be
+  // specified using percentage units.
+  width: 960,
+  height: 700,
+
+  // Factor of the display size that should remain empty around the content
+  margin: 0.1,
+
+  // Bounds for smallest/largest possible scale to apply to content
+  minScale: 0.2,
+  maxScale: 1.5,
+
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+      { src: 'node_modules/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'node_modules/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'node_modules/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      
+      { src: 'node_modules/reveal.js/plugin/zoom-js/zoom.js', async: true },
+      { src: 'node_modules/reveal.js/plugin/notes/notes.js', async: true }
+  ]
+});</script></body></html>

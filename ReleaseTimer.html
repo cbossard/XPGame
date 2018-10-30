@@ -1,0 +1,130 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en">
+
+<!-- XP Game site maintained by Tryx and Nayima -->
+<HEAD>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+<!-- Begin
+
+function changeCell(row,nbitems) {
+	var i
+	for (i=1;i <= nbitems;i++) {
+		var cell = row.getElementsByTagName("td").item(i) ;
+		if (cell.className.indexOf('done') == -1) {
+			cell.className = 'done' ;
+			return true ;
+		}
+	}
+	return false ;
+}
+
+function clock() {
+	var continueChecking = true ;
+	var estimationTime = 15;
+	var planTime = 5;
+	var implementTime = 20;
+
+	var element = document.getElementsByTagName("table").item(0);
+	var estimateRow = element.getElementsByTagName("tr").item(0) ;
+	var planRow = element.getElementsByTagName("tr").item(1) ;
+	var implementRow = element.getElementsByTagName("tr").item(2) ;
+
+	var seconds_left = estimationTime + planTime + implementTime;
+	var interval = setInterval(function() {
+			seconds_left --;
+			if (!changeCell(estimateRow,estimationTime)) {
+				if (!changeCell(planRow,planTime)) {
+					if (!changeCell(implementRow,implementTime)) {
+						alert("TIME'S UP !!!") ;
+						continueChecking = false ;
+					}
+				}
+			}
+	}, 1000 * 60);
+
+}
+//  End -->
+</SCRIPT>
+<BASE >
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
+<META name="Author" content="Vera Peeters, Pascal Van Cauwenberghe, Martine Verluyten">
+<META name="Keywords" content="belgium,xp,planning game,velocity,extreme programming,agile,xp game">
+<META name="Description" content="XP Game presentation">
+<LINK REL="stylesheet" HREF="style.css" TYPE="text/css">
+<TITLE>XP Game Timer</TITLE>
+</HEAD>
+<BODY>
+<div class="main" name="main">
+<h1 class="center">Timer</h1>
+
+<table width="100%" class="timer table table-condensed" name="progress" ID="Table1">
+	<tr >
+		<td><strong>Estimate (15 minutes)</strong><br>&nbsp;&nbsp;Team == developers</td>
+		<td id="estimate1" name="estimate1" class="filled">&nbsp;</td>
+		<td id="estimate2" name="estimate2" class="filled">&nbsp;</td>
+		<td id="estimate3" name="estimate3" class="filled">&nbsp;</td>
+		<td id="estimate4" name="estimate4" class="filled">&nbsp;</td>
+		<td id="estimate5" name="estimate5" class="filled">&nbsp;</td>
+		<td id="estimate6" name="estimate6" class="filled">&nbsp;</td>
+		<td id="estimate7" name="estimate7" class="filled">&nbsp;</td>
+		<td id="estimate8" name="estimate8" class="filled">&nbsp;</td>
+		<td id="estimate9" name="estimate9" class="filled">&nbsp;</td>
+		<td id="estimate10" name="estimate10" class="filled">&nbsp;</td>
+		<td id="estimate11" name="estimate11" class="filled">&nbsp;</td>
+		<td id="estimate12" name="estimate12" class="filled">&nbsp;</td>
+		<td id="estimate13" name="estimate13" class="filled">&nbsp;</td>
+		<td id="estimate14" name="estimate14" class="filled">&nbsp;</td>
+		<td id="estimate15" name="estimate15" class="filled">&nbsp;</td>
+	</tr>
+<tr name="plan">
+	<td><strong>Plan (5 minutes)</strong><br>&nbsp;&nbsp;Team == customers</td>
+	<td id="plan1" name="plan1" class="filled">&nbsp;</td>
+	<td id="plan2" name="plan2" class="filled">&nbsp;</td>
+	<td id="plan3" name="plan3" class="filled">&nbsp;</td>
+	<td id="plan4" name="plan4" class="filled">&nbsp;</td>
+	<td id="plan5" name="plan5" class="filled">&nbsp;</td>
+</tr>
+<tr>
+	<td><strong>Implement (20 minutes)</strong><br>&nbsp;&nbsp;Team == developers</td>
+	<td id="implement1" name="implement1" class="filled">&nbsp;</td>
+	<td id="implement2" name="implement2" class="filled">&nbsp;</td>
+	<td id="implement3" name="implement3" class="filled">&nbsp;</td>
+	<td id="implement4" name="implement4" class="filled">&nbsp;</td>
+	<td id="implement5" name="implement5" class="filled">&nbsp;</td>
+	<td id="implement6" name="implement6" class="filled">&nbsp;</td>
+	<td id="implement7" name="implement7" class="filled">&nbsp;</td>
+	<td id="implement8" name="implement8" class="filled">&nbsp;</td>
+	<td id="implement9" name="implement9" class="filled">&nbsp;</td>
+	<td id="implement10" name="implement10" class="filled">&nbsp;</td>
+	<td id="implement11" name="implement11" class="filled">&nbsp;</td>
+	<td id="implement12" name="implement12" class="filled">&nbsp;</td>
+	<td id="implement13" name="implement13" class="filled">&nbsp;</td>
+	<td id="implement14" name="implement14" class="filled">&nbsp;</td>
+	<td id="implement15" name="implement15" class="filled">&nbsp;</td>
+	<td id="implement16" name="implement16" class="filled">&nbsp;</td>
+	<td id="implement17" name="implement17" class="filled">&nbsp;</td>
+	<td id="implement18" name="implement18" class="filled">&nbsp;</td>
+	<td id="implement19" name="implement19" class="filled">&nbsp;</td>
+	<td id="implement20" name="implement20" class="filled">&nbsp;</td>
+</tr>
+</table>
+<form action="http://pikachu/xpg/ReleaseTimer.asp" method="get" ID="Form1">
+
+<button type="button" class="btn btn-success" onclick="clock();">START</button>
+
+
+</form>
+</div>
+
+
+
+</BODY>
+
+<!-- XP Game site maintained by Tryx and Nayima -->
+</HTML>
